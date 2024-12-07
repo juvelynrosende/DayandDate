@@ -8,7 +8,7 @@
 <body>
   <form method="GET">
     <label for="daynumber">Enter number between 1-7 to show what day and date:</label>
-    <input type="text" id="daynumber" name"datenumber" required>
+    <input type="text" id="daynumber" name"daynumber" required>
     <input type="submit" value="Submit">
   </form>
 
