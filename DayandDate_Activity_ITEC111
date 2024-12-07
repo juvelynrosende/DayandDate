@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day and Date using Switchcase Statement</title>
+</head>
+<body>
+  <form method="GET">
+    <label for="daynumber">Enter number between 1-7 to show what day and date:</label>
+    <input type="text" id="daynumber" name"datenumber" required>
+    <input type="submit" value="Submit">
+  </form>
+
+<?php
+if(isset($_GET['daynumber'])){
+  $daynumber = (int)$_GET['daynumber'];
+  switch ($daynumber){
+    case 1:
+      echo "Monday, December 9, 2024";
+      break;
+    case 2:
+      echo "Tuesday, December 10, 2024";
+      break;
+    case 3:
+      echo "Wednesday, December 11, 2024";
+      break;
+    case 4:
+      echo "Thursday, December 12, 2024";
+      break;
+    case 5:
+      echo "Friday, December 13, 2024";
+      break;
+    case 6:
+      echo "Saturday, December 14, 2024";
+      break;
+    case 7:
+      echo "Sunday, December 15, 2024";
+      break;
+  }
+}
+  ?> 
+</body>
+</html>
